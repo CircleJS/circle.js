@@ -40,6 +40,15 @@
         this.init();
     }
 
+    function moveToTarget(targetID) {
+        var targetOffset = $('#'+targetID).offset();
+
+        $('.blueCircle').css({
+            'top': targetOffset.top,
+            'left': targetOffset.left
+        });
+    }
+
     Plugin.prototype = {
 
         init: function() {
@@ -49,6 +58,7 @@
             // and this.options
             // you can add more functions like the one below and
             // call them like so: this.yourOtherFunction(this.element, this.options).
+            moveToTarget(this.element.id);
         },
 
         yourOtherFunction: function(el, options) {
