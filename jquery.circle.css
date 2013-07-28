@@ -6,6 +6,6 @@
     left: 0;
     top: 0;
     z-index: 1;
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50%;
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
 }
