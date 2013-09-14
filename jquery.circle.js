@@ -50,12 +50,20 @@
             // you can add more functions like the one below and
             // call them like so: this.yourOtherFunction(this.element, this.options).
 
-            var target = $(this.element);
-            var targetOffset = target.offset();
+            var $target = $(this.element);
+            var $circle = $('.blueCircle');
+            var targetOffset = $target.offset();
 
-            $('.blueCircle').css({
-                'top': targetOffset.top,
-                'left': targetOffset.left
+            var h = $target.outerHeight();
+            var w = $target.outerWidth();
+            var diag = Math.sqrt(h*h + w*w);
+            var border = parseFloat($circle.css('border-top-width'));
+
+            $circle.css({
+                'top': targetOffset.top + h/2 - diag/2 - border,
+                'left': targetOffset.left + w/2 - diag/2 - border,
+                'height': diag,
+                'width': diag
             });
         },
 
