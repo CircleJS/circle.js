@@ -51,8 +51,13 @@
             // call them like so: this.yourOtherFunction(this.element, this.options).
 
             var $target = $(this.element);
-            var $circle = $('.blueCircle');
             var targetOffset = $target.offset();
+            
+            var $circle = $('.blueCircle');
+            if (!$circle.length) {
+                $circle = $('<div class="blueCircle"></div>');
+                $circle.appendTo('body');
+            }
 
             var h = $target.outerHeight();
             var w = $target.outerWidth();
