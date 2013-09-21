@@ -69,10 +69,10 @@
             var paddingLeft = parseFloat($circle.css('padding-left'));
 
             $circle.css({
-                'top': targetOffset.top + h/2 - diag/2 - border - paddingTop,
-                'left': targetOffset.left + w/2 - diag/2 - border - paddingLeft,
-                'height': diag,
-                'width': diag
+                'top': Math.ceil(targetOffset.top + h/2 - diag/2 - border - paddingTop),
+                'left': Math.ceil(targetOffset.left + w/2 - diag/2 - border - paddingLeft),
+                'height': Math.ceil(diag),
+                'width': Math.ceil(diag)
             });
         },
 
