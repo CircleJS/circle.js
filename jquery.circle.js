@@ -62,11 +62,15 @@
             var h = $target.outerHeight();
             var w = $target.outerWidth();
             var diag = Math.sqrt(h*h + w*w);
+
+            // assuming that all border widths are equal
             var border = parseFloat($circle.css('border-top-width'));
+            var paddingTop = parseFloat($circle.css('padding-top'));
+            var paddingLeft = parseFloat($circle.css('padding-left'));
 
             $circle.css({
-                'top': targetOffset.top + h/2 - diag/2 - border,
-                'left': targetOffset.left + w/2 - diag/2 - border,
+                'top': targetOffset.top + h/2 - diag/2 - border - paddingTop,
+                'left': targetOffset.left + w/2 - diag/2 - border - paddingLeft,
                 'height': diag,
                 'width': diag
             });
