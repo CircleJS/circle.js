@@ -12,11 +12,16 @@
     <script src="jquery-1.10.1.min.js"></script>
     <script src="../jquery.circle.js"></script>
     <script type="text/javascript">
+        // $(document).ready(function(){
+        //     setTimeout(function(){
+        //         $('#target1').circle();
+        //     }, 500)
+        // });
         $(document).ready(function(){
-            setTimeout(function(){
-                $('#target1').circle();
-            }, 500)
-        });
+          $('h1').click(function(){
+            $(this).circle();
+          })
+        })
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
