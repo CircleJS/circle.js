@@ -1,7 +1,24 @@
+@-webkit-keyframes blueCircleEnterAnimation {
+    from { -webkit-transform: scale(20); transform: scale(20); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+@-moz-keyframes blueCircleEnterAnimation {
+    from { -moz-transform: scale(20); transform: scale(20); }
+    to { -moz-transform: scale(1); transform: scale(1); }
+}
+@-o-keyframes blueCircleEnterAnimation {
+    from { -o-transform: scale(20); transform: scale(20); }
+    to { -o-transform: scale(1); transform: scale(1); }
+}
+@keyframes blueCircleEnterAnimation {
+    from { transform: scale(20); }
+    to { transform: scale(1); }
+}
+
 .blueCircle {
     height: 100px;
     width: 100px;
-	border: 3px solid blue;
+    border: 3px solid blue;
     position: absolute;
     left: 0;
     top: 0;
@@ -10,4 +27,9 @@
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
                 0 0 3px blue,
                 0 0 3px blue inset;
+
+    -webkit-animation: blueCircleEnterAnimation 1s linear;
+       -moz-animation: blueCircleEnterAnimation 1s linear;
+         -o-animation: blueCircleEnterAnimation 1s linear;
+            animation: blueCircleEnterAnimation 1s linear;
 }
