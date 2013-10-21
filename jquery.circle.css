@@ -1,18 +1,35 @@
-@-webkit-keyframes blueCircleEnterAnimation {
-    from { -webkit-transform: scale(20); transform: scale(20); }
+@-webkit-keyframes blueCircleEnterAnimationScale {
+    from { -webkit-transform: scale(10); transform: scale(10); }
     to { -webkit-transform: scale(1); transform: scale(1); }
 }
-@-moz-keyframes blueCircleEnterAnimation {
-    from { -moz-transform: scale(20); transform: scale(20); }
+@-moz-keyframes blueCircleEnterAnimationScale {
+    from { -moz-transform: scale(10); transform: scale(10); }
     to { -moz-transform: scale(1); transform: scale(1); }
 }
-@-o-keyframes blueCircleEnterAnimation {
-    from { -o-transform: scale(20); transform: scale(20); }
+@-o-keyframes blueCircleEnterAnimationScale {
+    from { -o-transform: scale(10); transform: scale(10); }
     to { -o-transform: scale(1); transform: scale(1); }
 }
-@keyframes blueCircleEnterAnimation {
-    from { transform: scale(20); }
+@keyframes blueCircleEnterAnimationScale {
+    from { transform: scale(10); }
     to { transform: scale(1); }
+}
+
+@-webkit-keyframes blueCircleEnterAnimationOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes blueCircleEnterAnimationOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-o-keyframes blueCircleEnterAnimationOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes blueCircleEnterAnimationOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .blueCircle {
@@ -28,8 +45,12 @@
                 0 0 3px blue,
                 0 0 3px blue inset;
 
-    -webkit-animation: blueCircleEnterAnimation 1s linear;
-       -moz-animation: blueCircleEnterAnimation 1s linear;
-         -o-animation: blueCircleEnterAnimation 1s linear;
-            animation: blueCircleEnterAnimation 1s linear;
+    -webkit-animation: blueCircleEnterAnimationScale 0.7s ease,
+                       blueCircleEnterAnimationOpacity 0.7s linear;
+       -moz-animation: blueCircleEnterAnimationScale 0.7s ease,
+                       blueCircleEnterAnimationOpacity 0.7s linear;
+         -o-animation: blueCircleEnterAnimationScale 0.7s ease,
+                       blueCircleEnterAnimationOpacity 0.7s linear;
+            animation: blueCircleEnterAnimationScale 0.7s ease,
+                       blueCircleEnterAnimationOpacity 0.7s linear;
 }
