@@ -44,7 +44,9 @@
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
                 0 0 3px blue,
                 0 0 3px blue inset;
+}
 
+.blueCircleAnimated {
     -webkit-animation: blueCircleEnterAnimationScale 0.7s ease,
                        blueCircleEnterAnimationOpacity 0.7s linear;
        -moz-animation: blueCircleEnterAnimationScale 0.7s ease,
@@ -53,4 +55,11 @@
                        blueCircleEnterAnimationOpacity 0.7s linear;
             animation: blueCircleEnterAnimationScale 0.7s ease,
                        blueCircleEnterAnimationOpacity 0.7s linear;
+}
+
+.blueCircleTransitioned {
+    -webkit-transition: transform 0.7s ease, opacity o.7s linear;
+       -moz-transition: transform 0.7s ease, opacity o.7s linear;
+         -o-transition: transform 0.7s ease, opacity o.7s linear;
+            transition: transform 0.7s ease, opacity o.7s linear;
 }

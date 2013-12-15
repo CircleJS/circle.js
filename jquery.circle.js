@@ -21,7 +21,8 @@
     // Create the defaults once
     var pluginName = "circle",
         defaults = {
-            propertyName: "value"
+            animate: false,
+            animationMode: 'transition' // 'animation'
         };
 
     // The actual plugin constructor
@@ -55,7 +56,14 @@
             
             var $circle = $('.blueCircle');
             if (!$circle.length) {
-                $circle = $('<div class="blueCircle"></div>');
+                var cssClass = "blueCircle";
+                if (this.options.animate) {
+                    if (this.options.animationMode === 'animation') {
+                        cssClass += " blueCircleAnimated";
+                    }
+                }
+
+                $circle = $('<div class="' + cssClass + '"></div>');
                 $circle.appendTo('body');
             }
 
@@ -74,6 +82,22 @@
                 'height': Math.ceil(diag),
                 'width': Math.ceil(diag)
             });
+
+            if (this.options.animate && this.options.animationMode === 'transition') {
+                var initialScale = 5;
+
+                $circle.css({
+                    'transform': 'scale(' + initialScale + ')',
+                });
+
+                setTimeout(function(){
+                    $circle.addClass('blueCircleTransitioned');
+                    $circle.css({
+                        'transform': 'scale(1)',
+                        'opacity': 1
+                    });
+                }, 0);
+            }
         },
 
         yourOtherFunction: function(el, options) {
