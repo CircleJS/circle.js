@@ -100,8 +100,11 @@
             }
         },
 
-        yourOtherFunction: function(el, options) {
-            // some logic
+        destroy: function(el, options) {
+            var $circle = $('.blueCircle');
+            if ($circle && $circle.length) {
+                $circle.remove();
+            }
         }
     };
 
