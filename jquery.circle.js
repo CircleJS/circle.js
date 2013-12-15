@@ -112,8 +112,12 @@
     // preventing against multiple instantiations
     $.fn[pluginName] = function ( options ) {
         return this.each(function () {
-            if (!$.data(this, "plugin_" + pluginName)) {
-                $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+            var instance = $.data(this, "plugin_" + pluginName);
+            if (!instance) {
+                instance = new Plugin( this, options );
+                $.data(this, "plugin_" + pluginName, instance);
+            } else if (options === 'destroy') {
+                instance.destroy();
             }
         });
     };
