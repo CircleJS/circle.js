@@ -14,6 +14,55 @@ body {
 }
 
 
+.jslogo {
+    height: 5em;
+    width: 5em;
+}
+
+.circlejslogo {
+    position: relative;
+    height: 5em;
+    width: 5em;
+    background-color: #f3df49;
+    color: #2e2e2c;
+    overflow: hidden;
+}
+.circlejslogo:before {
+    content: "JS";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0.1em;
+    font-family: Arial, Helvetica;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+.circlejslogo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    margin: 0.35em;
+    border: 0.35em solid #1980D5;
+    border-radius: 50%;
+}
+
+.circlejslogo.circlejslogo2:before {
+    
+}
+.circlejslogo.circlejslogo2:after {
+    height: 4em;
+    width: 4em;
+    margin: 0.65em;
+    border-width: 0.45em;
+}
+
+
+
 @-webkit-keyframes circlejslogoAnimation {
     from { -webkit-transform: scale(1); transform: scale(1); }
     35% { -webkit-transform: scale(1); transform: scale(1); }
@@ -41,36 +90,6 @@ body {
     50% { transform: scale(1.15); }
     65% { transform: scale(1); }
     to { transform: scale(1); }
-}
-
-.circlejslogo {
-    position: relative;
-    height: 5em;
-    width: 5em;
-    background-color: #FFFF00;
-}
-.circlejslogo:before {
-    content: "JS";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 0.1em;
-    font-family: trebuchet ms;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-.circlejslogo:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2em;
-    width: 2em;
-    margin: 0.35em;
-    border: 0.35em solid #0000FF;
-    border-radius: 50%;
 }
 
 .circlejslogo-animated:after {
