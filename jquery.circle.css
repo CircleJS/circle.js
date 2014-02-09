@@ -1,4 +1,4 @@
-.blueCircle {
+.CircleJS {
     height: 100px;
     width: 100px;
     border: 3px solid #1980D5;
@@ -13,52 +13,52 @@
 }
 
 
-@-webkit-keyframes blueCircleEnterAnimationScale {
+@-webkit-keyframes CircleJSEnterAnimationScale {
     from { -webkit-transform: scale(10); transform: scale(10); }
     to { -webkit-transform: scale(1); transform: scale(1); }
 }
-@-moz-keyframes blueCircleEnterAnimationScale {
+@-moz-keyframes CircleJSEnterAnimationScale {
     from { -moz-transform: scale(10); transform: scale(10); }
     to { -moz-transform: scale(1); transform: scale(1); }
 }
-@-o-keyframes blueCircleEnterAnimationScale {
+@-o-keyframes CircleJSEnterAnimationScale {
     from { -o-transform: scale(10); transform: scale(10); }
     to { -o-transform: scale(1); transform: scale(1); }
 }
-@keyframes blueCircleEnterAnimationScale {
+@keyframes CircleJSEnterAnimationScale {
     from { transform: scale(10); }
     to { transform: scale(1); }
 }
 
-@-webkit-keyframes blueCircleEnterAnimationOpacity {
+@-webkit-keyframes CircleJSEnterAnimationOpacity {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@-moz-keyframes blueCircleEnterAnimationOpacity {
+@-moz-keyframes CircleJSEnterAnimationOpacity {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@-o-keyframes blueCircleEnterAnimationOpacity {
+@-o-keyframes CircleJSEnterAnimationOpacity {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@keyframes blueCircleEnterAnimationOpacity {
+@keyframes CircleJSEnterAnimationOpacity {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-.blueCircleAnimated {
-    -webkit-animation: blueCircleEnterAnimationScale 0.7s ease,
-                       blueCircleEnterAnimationOpacity 0.7s linear;
-       -moz-animation: blueCircleEnterAnimationScale 0.7s ease,
-                       blueCircleEnterAnimationOpacity 0.7s linear;
-         -o-animation: blueCircleEnterAnimationScale 0.7s ease,
-                       blueCircleEnterAnimationOpacity 0.7s linear;
-            animation: blueCircleEnterAnimationScale 0.7s ease,
-                       blueCircleEnterAnimationOpacity 0.7s linear;
+.CircleJSAnimated {
+    -webkit-animation: CircleJSEnterAnimationScale 0.7s ease,
+                       CircleJSEnterAnimationOpacity 0.7s linear;
+       -moz-animation: CircleJSEnterAnimationScale 0.7s ease,
+                       CircleJSEnterAnimationOpacity 0.7s linear;
+         -o-animation: CircleJSEnterAnimationScale 0.7s ease,
+                       CircleJSEnterAnimationOpacity 0.7s linear;
+            animation: CircleJSEnterAnimationScale 0.7s ease,
+                       CircleJSEnterAnimationOpacity 0.7s linear;
 }
 
-.blueCircleTransitioned {
+.CircleJSTransitioned {
     -webkit-transition: transform 0.7s ease, opacity o.7s linear;
        -moz-transition: transform 0.7s ease, opacity o.7s linear;
          -o-transition: transform 0.7s ease, opacity o.7s linear;

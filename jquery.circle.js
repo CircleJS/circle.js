@@ -54,12 +54,12 @@
             var $target = $(this.element);
             var targetOffset = $target.offset();
             
-            var $circle = $('.blueCircle');
+            var $circle = $('.CircleJS');
             if (!$circle.length) {
-                var cssClass = "blueCircle";
+                var cssClass = "CircleJS";
                 if (this.options.animate) {
                     if (this.options.animationMode === 'animation') {
-                        cssClass += " blueCircleAnimated";
+                        cssClass += " CircleJSAnimated";
                     }
                 }
 
@@ -91,7 +91,7 @@
                 });
 
                 setTimeout(function(){
-                    $circle.addClass('blueCircleTransitioned');
+                    $circle.addClass('CircleJSTransitioned');
                     $circle.css({
                         'transform': 'scale(1)',
                         'opacity': 1
@@ -101,7 +101,7 @@
         },
 
         destroy: function(el, options) {
-            var $circle = $('.blueCircle');
+            var $circle = $('.CircleJS');
             if ($circle && $circle.length) {
                 $circle.remove();
             }
