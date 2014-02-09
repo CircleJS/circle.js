@@ -1,3 +1,18 @@
+.blueCircle {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #1980D5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
+                0 0 3px #1980D5,
+                0 0 3px #1980D5 inset;
+}
+
+
 @-webkit-keyframes blueCircleEnterAnimationScale {
     from { -webkit-transform: scale(10); transform: scale(10); }
     to { -webkit-transform: scale(1); transform: scale(1); }
@@ -30,20 +45,6 @@
 @keyframes blueCircleEnterAnimationOpacity {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-.blueCircle {
-    height: 100px;
-    width: 100px;
-    border: 3px solid blue;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    border-radius: 50%;
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
-                0 0 3px blue,
-                0 0 3px blue inset;
 }
 
 .blueCircleAnimated {
