@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(75, 75, 77, 0.82);
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 30px;
+}
+
+
+@-webkit-keyframes circlejslogoAnimation {
+    from { -webkit-transform: scale(1); transform: scale(1); }
+    35% { -webkit-transform: scale(1); transform: scale(1); }
+    50% { -webkit-transform: scale(1.15); transform: scale(1.15); }
+    65% { -webkit-transform: scale(1); transform: scale(1); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+@-moz-keyframes circlejslogoAnimation {
+    from { -moz-transform: scale(1); transform: scale(1); }
+    35% { -moz-transform: scale(1); transform: scale(1); }
+    50% { -moz-transform: scale(1.15); transform: scale(1.15); }
+    65% { -moz-transform: scale(1); transform: scale(1); }
+    to { -moz-transform: scale(1); transform: scale(1); }
+}
+@-o-keyframes circlejslogoAnimation {
+    from { -o-transform: scale(1); transform: scale(1); }
+    35% { -o-transform: scale(1); transform: scale(1); }
+    50% { -o-transform: scale(1.15); transform: scale(1.15); }
+    65% { -o-transform: scale(1); transform: scale(1); }
+    to { -o-transform: scale(1); transform: scale(1); }
+}
+@keyframes circlejslogoAnimation {
+    from { transform: scale(1); }
+    35% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    65% { transform: scale(1); }
+    to { transform: scale(1); }
+}
+
+.circlejslogo {
+    position: relative;
+    height: 5em;
+    width: 5em;
+    background-color: #FFFF00;
+}
+.circlejslogo:before {
+    content: "JS";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0.1em;
+    font-family: trebuchet ms;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.circlejslogo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    margin: 0.35em;
+    border: 0.35em solid #0000FF;
+    border-radius: 50%;
+}
+
+.circlejslogo-animated:after {
+    -webkit-animation: circlejslogoAnimation 2s linear infinite;
+       -moz-animation: circlejslogoAnimation 2s linear infinite;
+         -o-animation: circlejslogoAnimation 2s linear infinite;
+            animation: circlejslogoAnimation 2s linear infinite;
+}
