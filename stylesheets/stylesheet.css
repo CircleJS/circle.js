@@ -149,12 +149,35 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
-  width: 138px;
-  padding-left: 64px;
+  position: relative;
   display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  height: auto;
+  width: 5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.2em;
   margin-bottom: 20px;
   font-size: 21px;
+
+  background: #2c84dd;
+  background: -moz-linear-gradient(top, #2c84dd 0%, #2e7ad0 52%, #3177cc 72%, #3072c8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c84dd), color-stop(52%,#2e7ad0), color-stop(72%,#3177cc), color-stop(100%,#3072c8));
+  background: -webkit-linear-gradient(top, #2c84dd 0%,#2e7ad0 52%,#3177cc 72%,#3072c8 100%);
+  background: -o-linear-gradient(top, #2c84dd 0%,#2e7ad0 52%,#3177cc 72%,#3072c8 100%);
+  background: -ms-linear-gradient(top, #2c84dd 0%,#2e7ad0 52%,#3177cc 72%,#3072c8 100%);
+  background: linear-gradient(to bottom, #2c84dd 0%,#2e7ad0 52%,#3177cc 72%,#3072c8 100%);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+aside a.button > .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.25em;
+    margin-left: 0.3em;
+    font-size: 2em;
 }
 
 code, pre {

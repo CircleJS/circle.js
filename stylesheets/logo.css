@@ -1,0 +1,73 @@
+.circlejslogo {
+    position: relative;
+    height: 4em;
+    width: 4em;
+    background-color: #f3df49;
+    color: #2e2e2c;
+    overflow: hidden;
+
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 39%;
+}
+
+.circlejslogo:before {
+    content: ".JS";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 2em;
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+}
+.circlejslogo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3.3em;
+    width: 3.3em;
+    margin: 0.55em 0.35em;
+    border: 0.3em solid #2E7BCF;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes circlejslogoAnimation {
+    from { -webkit-transform: scale(1); transform: scale(1); }
+    35% { -webkit-transform: scale(1); transform: scale(1); }
+    50% { -webkit-transform: scale(1.15); transform: scale(1.15); }
+    65% { -webkit-transform: scale(1); transform: scale(1); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+@-moz-keyframes circlejslogoAnimation {
+    from { -moz-transform: scale(1); transform: scale(1); }
+    35% { -moz-transform: scale(1); transform: scale(1); }
+    50% { -moz-transform: scale(1.15); transform: scale(1.15); }
+    65% { -moz-transform: scale(1); transform: scale(1); }
+    to { -moz-transform: scale(1); transform: scale(1); }
+}
+@-o-keyframes circlejslogoAnimation {
+    from { -o-transform: scale(1); transform: scale(1); }
+    35% { -o-transform: scale(1); transform: scale(1); }
+    50% { -o-transform: scale(1.15); transform: scale(1.15); }
+    65% { -o-transform: scale(1); transform: scale(1); }
+    to { -o-transform: scale(1); transform: scale(1); }
+}
+@keyframes circlejslogoAnimation {
+    from { transform: scale(1); }
+    35% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    65% { transform: scale(1); }
+    to { transform: scale(1); }
+}
+
+.circlejslogo-animated:after {
+    -webkit-animation: circlejslogoAnimation 2s linear infinite;
+       -moz-animation: circlejslogoAnimation 2s linear infinite;
+         -o-animation: circlejslogoAnimation 2s linear infinite;
+            animation: circlejslogoAnimation 2s linear infinite;
+}
