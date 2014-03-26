@@ -1,0 +1,9 @@
+#main-content > h3,
+#main-content > h3 + p {
+    width: 50%;
+    float: left;
+}
+
+#main-content > h3 + p {
+    margin-top: 24px;
+}
