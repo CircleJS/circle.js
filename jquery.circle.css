@@ -59,8 +59,8 @@
 }
 
 .CircleJSTransitioned {
-    -webkit-transition: transform 0.7s ease, opacity o.7s linear;
-       -moz-transition: transform 0.7s ease, opacity o.7s linear;
-         -o-transition: transform 0.7s ease, opacity o.7s linear;
-            transition: transform 0.7s ease, opacity o.7s linear;
+    -webkit-transition: transform 0.7s ease, opacity 0.7s linear;
+       -moz-transition: transform 0.7s ease, opacity 0.7s linear;
+         -o-transition: transform 0.7s ease, opacity 0.7s linear;
+            transition: transform 0.7s ease, opacity 0.7s linear;
 }
