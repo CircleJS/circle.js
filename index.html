@@ -94,7 +94,7 @@ $ git checkout gh-pages
     <script type="text/javascript">
       $(document).ready(function() {
         var $paragraphs = $('#main-content > h3 + p');
-        $paragraphs.eq(0).circle({ animate: true });
+        window.crlc = $paragraphs.eq(0).circle({ animate: true });
       });
     </script>
   </body>
